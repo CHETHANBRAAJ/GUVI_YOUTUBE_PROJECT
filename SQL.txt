@@ -1,0 +1,37 @@
+CREATE TABLE channels (
+  Channel_id VARCHAR(255) ,
+  Channel_name VARCHAR(255),
+  Playlist_id VARCHAR(255),
+  Subscribers INTEGER,
+  Views INTEGER,
+  Total_videos INTEGER,
+  Description VARCHAR(255),
+  Country VARCHAR(255)
+);
+
+CREATE TABLE videos (
+  Channel_name VARCHAR(255),
+  Channel_id VARCHAR(255),
+  Video_id VARCHAR(255),
+  Title VARCHAR(255),
+  Tags VARCHAR(255),
+  Thumbnail VARCHAR(255),
+  Description VARCHAR(255),
+  Published_date TIMESTAMP,
+  Duration VARCHAR(255),
+  Views INTEGER,
+  Likes INTEGER,
+  Comments INTEGER,
+  Favorite_count INTEGER,
+  Definition VARCHAR(255),
+  Caption_status BOOLEAN
+);
+CREATE TABLE comments (
+  Comment_id VARCHAR(255),
+  Video_id VARCHAR(255),
+  Comment_text VARCHAR(255),
+  Comment_author VARCHAR(255),
+  Comment_posted_date TIMESTAMP,
+  Like_count INTEGER,
+  Reply_count INTEGER
+);
